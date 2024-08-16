@@ -1,6 +1,6 @@
 import speech_recognition as sr
 import webbrowser
-import pyttsx3 #pyttsx3 is a text-to-speech conversion library in Python. Unlike alternative libraries, it works offline.
+import pyttsx3 
 import musicLibrary
 import requests
 import google.generativeai as genai
@@ -14,7 +14,7 @@ from google.generativeai import GenerativeModel
 
 recognizer = sr.Recognizer()
 engine = pyttsx3.init() 
-newsapi = "e97b7e792d2046ed95d697106e2ecbff"
+newsapi = "{newsapi}"
 
 def speak_old(text):
     engine.say(text)
@@ -43,7 +43,7 @@ def speak(text):
 
 def aiProcess(command):
     # Configure the API key (replace with your actual key)
-    genai.configure(api_key="AIzaSyDFcDwvQuLfEAEUhUi03biWYP-a8XX2zd0`")
+    genai.configure(api_key="{Your API Key}")
 
     # Create a GenerativeModel instance (replace with desired model name)
     model = genai.GenerativeModel(model_name="text-bison-001")
