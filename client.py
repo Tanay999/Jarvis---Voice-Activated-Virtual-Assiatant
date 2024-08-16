@@ -1,6 +1,6 @@
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyDFcDwvQuLfEAEUhUi03biWYP-a8XX2zd0")
+genai.configure(api_key="{Your API Key}")
 
 model = genai.GenerativeModel(model_name="text-bison-001")  # Replace with desired model
 
